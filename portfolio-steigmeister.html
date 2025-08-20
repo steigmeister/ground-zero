@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The steigmeister | Developer</title>
+  <style>
+    /* Reset & Base Styles */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #f8f9fa;
+      color: #212529;
+      line-height: 1.6;
+    }
+
+    header {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+      color: white;
+      padding: 1rem;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 0.5rem;
+    }
+
+    header p {
+      font-size: 1.5rem;
+      max-width: 600px;
+    }
+
+    nav {
+      margin-top: 2rem;
+    }
+
+    nav a {
+      color: white;
+      margin: 0 1rem;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1rem;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    section {
+      padding: 4rem 2rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2.2rem;
+      margin-bottom: 1.5rem;
+      color: #333;
+      text-align: center;
+    }
+
+    #projects .project {
+      background: white;
+      margin: 1.5rem 0;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+
+    #projects .project:hover {
+      transform: translateY(-5px);
+    }
+
+    #projects h3 {
+      color: #1e3c72;
+    }
+
+    #skills {
+      background-color: #e9ecef;
+    }
+
+    #skills ul {
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 1rem;
+      font-size: 1.2rem;
+    }
+
+    #skills li {
+      background: #1e3c72;
+      color: white;
+      padding: 0.5rem 1rem;
+      border-radius: 20px;
+    }
+
+    #contact {
+      text-align: center;
+    }
+
+    #contact a {
+      color: #1e3c72;
+      margin: 0 1rem;
+      font-size: 1.2rem;
+      text-decoration: none;
+    }
+
+    #contact a:hover {
+      text-decoration: underline;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem;
+      background-color: #1e3c72;
+      color: white;
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2.2rem;
+      }
+      header p {
+        font-size: 1.1rem;
+      }
+      nav a {
+        font-size: 0.9rem;
+        margin: 0 0.5rem;
+      }
+      #skills li {
+        font-size: 1rem;
+        padding: 0.4rem 0.8rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Hero Section -->
+  <header id="home">
+    <h1>Troy/steigmeister</h1>
+    <p>Software Developer | C, C#, Python</p>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Projects Section -->
+  <section id="projects">
+    <h2>My Projects</h2>
+
+    <div class="project">
+      <h3>Embedded Systems Monitor (C)</h3>
+      <p>Real-time sensor monitoring system built in C for microcontrollers. Handles data acquisition, filtering, and serial output.</p>
+      <p><strong>Tech:</strong> C, Embedded C, UART, Sensors</p>
+    </div>
+
+    <div class="project">
+      <h3>Inventory Management System (C#)</h3>
+      <p>Windows desktop application using .NET and WinForms to manage product inventory, sales, and reporting.</p>
+      <p><strong>Tech:</strong> C#, .NET, SQL Server, WinForms</p>
+    </div>
+
+    <div class="project">
+      <h3>Data Analyzer Tool (Python)</h3>
+      <p>Script that processes CSV and JSON data using Pandas and Matplotlib to generate insights and visualizations.</p>
+      <p><strong>Tech:</strong> Python, Pandas, Matplotlib, NumPy</p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <h2>Skills</h2>
+    <ul>
+      <li>C</li>
+      <li>C#</li>
+      <li>Python</li>
+      <li>Git</li>
+      <li>SQL</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p>Email: steigmeister@gmail.com</p>
+    <a href="https://github.com/troy-steigmeister" target="https://github.com/steigmeister">GitHub</a> |
+    <a href="https://linkedin.com/in/troysteigmeister" target="_blank">LinkedIn</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Troy/steigmeister. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
